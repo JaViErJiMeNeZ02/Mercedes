@@ -9,8 +9,8 @@
 <body>
 
   <div class="p-0">
-    <header class="header flex justify-center items-center text-white bg-black w-full m-auto">
-        <ul class="ul flex justify-between">
+    <header class="header flex justify-center items-center text-white bg-black w-full pt-10">
+        <ul class="ul flex justify-between items-center space-x-6 lg:space-x-10">
             <li class="li m-10"><a class="a" href="">Modelos</a></li>
             <li class="li m-10"><a class="a" href="">Comprar</a></li>
             <li class="li m-10"><a class="a" href="">Servicios</a></li>
@@ -19,190 +19,247 @@
         <a class="div__img mr-16 ml-16 justify-center" href="./index.html">
             <img class="img w-32" src="./images/logo.jpg" alt="">
         </a>
-        <ul class="ul flex justify-between items-center">
+        <ul class="ul flex justify-between items-center space-x-6 lg:space-x-10">
             <li class="li m-10"><a class="a" href="">Proveedor/..</a></li>
             <li class="li m-10"><a class="a" href=""><i class="fa-solid fa-magnifying-glass"></i></a></li>
             <li class="li m-10"><a class="a" href=""><i class="fa-solid fa-star"></i></a></li>
-            <li class="li m-10"><a class="a flex items-center w-28" href=""><i class="fa-solid fa-user mr-2 text-xs"></i>Iniciar sesión</a></li>
+            <li class="li m-10"><a class="a flex items-center w-28" href="./form.html"><i class="fa-solid fa-user mr-2 text-xs"></i>Registrate</a></li>
         </ul>
     </header>
 
     <div class="w-full">
         <div class="div__video">
-            <video class="w-full mb-52" src="./video/videoplayback.mp4" loop autoplay muted></video>   
-    </div>
+            <video class="w-full mb-40" src="./video/videoplayback.mp4" loop autoplay muted></video>   
+        </div>
 
-    <div class="flex justify-center items-center min-h-screen mt-56">
-      <div class="flex-col justify-center mt-56 mb-12">
-        <h2 class="text-3xl font-bold mt-12">Nuestras recomendaciones</h2>
-        <div class="flex-col justify-center mt-12">
-          <div class="flex m-10">
-            <img class="w-80 h-60 mr-10" src="./images/1.jpg" alt=""> 
-            <img class="w-60 h-36" src="./images/2.jpg" alt="">
+    <div class="p-6">
+        <h2 class="text-5xl font-bold mb-20">Nuestras recomendaciones.</h2>
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-6">
+         
+          <div class="relative bg-black text-white rounded-lg overflow-hidden md:col-span-2 h-[400px]">
+            <img src="./images/1.jpg" alt="" class="w-full h-[300px] object-cover opacity-50">
+            <div class="absolute inset-0 flex flex-col justify-end p-4">
+              <p class="text-sm">Celebremos los viajes que nos conectan.</p>
+              <h3 class="text-lg font-semibold">Felices Fiestas, llenas de ilusión.</h3>
+              <button class="mt-4 bg-blue-500 text-white font-bold py-2 px-4 rounded hover:bg-blue-600">Saber más</button>
+            </div>
           </div>
-          <div class="flex m-10">
-            <img class="w-60 h-36 mr-10" src="./images/3.jpg" alt=""> 
-            <img class="w-60 h-36 mr-10" src="./images/4.jpg" alt=""> 
-            <img class="w-60 h-36" src="./images/5.jpg" alt=""> 
+      
+         
+          <div class="relative bg-black text-white rounded-lg overflow-hidden h-[350px]">
+            <img src="./images/2.jpg" alt="" class="w-full h-[250px] object-cover opacity-50">
+            <div class="absolute inset-0 flex flex-col justify-end p-4">
+              <p class="text-sm">Prueba de conducción.</p>
+              <h3 class="text-lg font-semibold">Siente la emoción de poner a prueba un Mercedes-Benz.</h3>
+              <button class="mt-4 bg-blue-500 text-white font-bold py-2 px-4 rounded hover:bg-blue-600">Pruébalo</button>
+            </div>
+          </div>
+      
+          
+          <div class="relative bg-white text-gray-800 rounded-lg overflow-hidden shadow-md h-[350px]">
+            <img src="./images/3.jpg" alt="" class="w-full h-[200px] object-cover">
+            <div class="p-4">
+              <h3 class="text-lg font-semibold">Clase A</h3>
+              <p class="text-sm">Ahora por 240 €/mes</p>
+              <div class="flex space-x-2 mt-4">
+                <button class="bg-blue-500 text-white font-bold py-2 px-4 rounded hover:bg-blue-600">Ver oferta</button>
+                <button class="bg-gray-100 text-gray-800 font-bold py-2 px-4 rounded hover:bg-gray-200">Más información</button>
+              </div>
+            </div>
+          </div>
+      
+          
+          <div class="relative bg-white text-gray-800 rounded-lg overflow-hidden shadow-md h-[350px]">
+            <img src="./images/4.jpg" alt="" class="w-full h-[200px] object-cover">
+            <div class="p-4">
+              <h3 class="text-lg font-semibold">Descubre nuestra gama 100% eléctrica e híbrida enchufable.</h3>
+              <div class="flex space-x-2 mt-4">
+                <button class="bg-blue-500 text-white font-bold py-2 px-4 rounded hover:bg-blue-600">100% eléctricos</button>
+                <button class="bg-gray-100 text-gray-800 font-bold py-2 px-4 rounded hover:bg-gray-200">Híbridos Enchufables</button>
+              </div>
+            </div>
+          </div>
+      
+          
+          <div class="relative bg-white text-gray-800 rounded-lg overflow-hidden shadow-md h-[350px]">
+            <img src="./images/5.jpg" alt="" class="w-full h-[200px] object-cover">
+            <div class="p-4">
+              <h3 class="text-lg font-semibold">Mercedes-Benz Certified</h3>
+              <p class="text-sm">Llegó tu momento.</p>
+              <button class="mt-4 bg-blue-500 text-white font-bold py-2 px-4 rounded hover:bg-blue-600">Descúbrelo</button>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-
     
 
-    <div class="flex justify-center items-center min-h-screen space-x-6">
-      <div class="flex-col justify-center mt-12 mb-12 max-w-3xl w-full p-6 bg-white rounded-lg shadow-lg space-y-6">
-        <div class="flex justify-center w-full">
-          <img src="./images/6.jpg" alt="GLA 250 e" class="max-w-lg rounded-lg shadow-md">
-        </div>
-    
-        <div class="flex justify-center">
-          <h3 class="t">GLA 250 e Híbrido Enchufable por 350 €/mes<b class="text-blue-600">[b]</b></h3>
-          <p class="">Aportación inicial de 15.803,70 €</p>
-        </div>
-    
-        <div class="flex justify-center">
-          <ul>
-            <li class="">AMG Line Advanced Plus</li>
-            <li class="">Paquete Night</li>
-            <li class="">Cargador e instalación de regalo</li>
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 p-6">
+        
+        <div class="bg-white border rounded-lg shadow-md p-4">
+          <img src="./images/6.jpg" alt="" class="rounded-lg w-full">
+          <h3 class="text-lg font-semibold mt-4">GLA 250 e</h3>
+          <p class="text-sm text-gray-700">Híbrido Enchufable</p>
+          <p class="text-xl font-bold mt-2">por 350 €/mes</p>
+          <p class="text-sm text-gray-600">Aportación inicial de 15.803,70 €</p>
+          <ul class="list-disc list-inside text-sm mt-4">
+            <li>AMG Line Advanced Plus</li>
+            <li>Paquete Night</li>
+            <li>Cargador e instalación de regalo</li>
           </ul>
-        </div>
-    
-        <div class="flex justify-center">
-          <h3 class="">Oferta sujeta a la contratación de Seguro Mercedes-Benz. No incluido en la cuota.<b class="">[e]</b></h3>
-        </div>
-    
-        <div class="flex justify-center">
-          <ul>
-            <li class="">Hasta 70 km de autonomía eléctrica en ciudad</li>
-            <li class="">Recárgalo en casa en 3 h y 15 min</li>
-            <li class="">Etiqueta 0. Sin impuesto de matriculación</li>
+          <p class="text-sm text-gray-600 mt-4">
+            Oferta sujeta a la contratación de Seguro Mercedes-Benz. No incluido en la cuota.
+          </p>
+          <ul class="list-disc list-inside text-sm mt-4">
+            <li>Hasta 70 km de autonomía eléctrica en ciudad</li>
+            <li>Recárgalo en casa en 3 h y 15 min</li>
+            <li>Etiqueta 0. Sin impuesto de matriculación</li>
           </ul>
+          <button class="mt-4 bg-blue-500 text-white font-bold py-2 px-4 rounded hover:bg-blue-600">Más información</button>
         </div>
-    
-        <div class="flex justify-center gap-6 mt-6">
-          <button class="">Más información</button>
-          <button class="">También con motor térmico</button>
+      
+        
+        <div class="bg-white border rounded-lg shadow-md p-4">
+          <img src="./images/7.jpg" alt="" class="rounded-lg w-full">
+          <h3 class="text-lg font-semibold mt-4">GLC 300 de 4MATIC</h3>
+          <p class="text-sm text-gray-700">Híbrido Enchufable</p>
+          <p class="text-xl font-bold mt-2">por 540 €/mes</p>
+          <p class="text-sm text-gray-600">Aportación inicial de 23.078,23 €</p>
+          <ul class="list-disc list-inside text-sm mt-4">
+            <li>AMG Line Advanced</li>
+            <li>Cargador e instalación de regalo</li>
+          </ul>
+          <p class="text-sm text-gray-600 mt-4">
+            Oferta sujeta a la contratación de Seguro Mercedes-Benz. No incluido en la cuota.
+          </p>
+          <ul class="list-disc list-inside text-sm mt-4">
+            <li>Hasta 126 km de autonomía eléctrica en ciudad</li>
+            <li>Recárgalo en 20 minutos a 60 kW</li>
+            <li>Etiqueta 0. Sin impuesto de matriculación</li>
+          </ul>
+          <button class="mt-4 bg-blue-500 text-white font-bold py-2 px-4 rounded hover:bg-blue-600">Más información</button>
+        </div>
+      
+       
+        <div class="bg-white border rounded-lg shadow-md p-4">
+          <img src="./images/8.jpg" alt="" class="rounded-lg w-full">
+          <h3 class="text-lg font-semibold mt-4">CLE 300 e Coupé</h3>
+          <p class="text-sm text-gray-700">Híbrido Enchufable</p>
+          <p class="text-xl font-bold mt-2">por 530 €/mes</p>
+          <p class="text-sm text-gray-600">Aportación inicial de 20.467,32 €</p>
+          <ul class="list-disc list-inside text-sm mt-4">
+            <li>Paquete AMG Line Premium</li>
+            <li>Cargador e instalación de regalo</li>
+          </ul>
+          <p class="text-sm text-gray-600 mt-4">
+            Oferta sujeta a la contratación de Seguro Mercedes-Benz. No incluido en la cuota.
+          </p>
+          <button class="mt-4 bg-blue-500 text-white font-bold py-2 px-4 rounded hover:bg-blue-600">Más información</button>
+        </div>
+      
+       
+        <div class="bg-white border rounded-lg shadow-md p-4 flex flex-col justify-center items-center">
+          <img src="./images/9.jpg" alt="" class="rounded-lg w-full">
+          <h3 class="text-lg font-semibold mt-4 text-center">Tenemos las ofertas más atractivas para ti.</h3>
+          <p class="text-sm text-gray-600 text-center mt-2">Encuentra la tuya en la amplia gama de Mercedes-Benz.</p>
+          <button class="mt-4 bg-blue-500 text-white font-bold py-2 px-4 rounded hover:bg-blue-600">Más información</button>
         </div>
       </div>
-    
-      <div class="flex-col justify-center mt-12 mb-12 max-w-3xl w-full p-6 bg-white rounded-lg shadow-lg space-y-6">
-        <div class="flex justify-center w-full">
-          <img src="./images/6.jpg" alt="GLA 250 e" class="max-w-lg rounded-lg shadow-md">
-        </div>
-    
-        <div class="flex justify-center">
-          <h3 class="t">GLA 250 e Híbrido Enchufable por 350 €/mes<b class="text-blue-600">[b]</b></h3>
-          <p class="">Aportación inicial de 15.803,70 €</p>
-        </div>
-    
-        <div class="flex justify-center">
-          <ul>
-            <li class="">AMG Line Advanced Plus</li>
-            <li class="">Paquete Night</li>
-            <li class="">Cargador e instalación de regalo</li>
-          </ul>
-        </div>
-    
-        <div class="flex justify-center">
-          <h3 class="">Oferta sujeta a la contratación de Seguro Mercedes-Benz. No incluido en la cuota.<b class="">[e]</b></h3>
-        </div>
-    
-        <div class="flex justify-center">
-          <ul>
-            <li class="">Hasta 70 km de autonomía eléctrica en ciudad</li>
-            <li class="">Recárgalo en casa en 3 h y 15 min</li>
-            <li class="">Etiqueta 0. Sin impuesto de matriculación</li>
-          </ul>
-        </div>
-    
-        <div class="flex justify-center gap-6 mt-6">
-          <button class="">Más información</button>
-          <button class="">También con motor térmico</button>
-        </div>
-      </div>
-    
-      <div class="flex-col justify-center mt-12 mb-12 max-w-3xl w-full p-6 bg-white rounded-lg shadow-lg space-y-6">
-        <div class="flex justify-center w-full">
-          <img src="./images/6.jpg" alt="GLA 250 e" class="max-w-lg rounded-lg shadow-md">
-        </div>
-    
-        <div class="flex justify-center">
-          <h3 class="t">GLA 250 e Híbrido Enchufable por 350 €/mes<b class="text-blue-600">[b]</b></h3>
-          <p class="">Aportación inicial de 15.803,70 €</p>
-        </div>
-    
-        <div class="flex justify-center">
-          <ul>
-            <li class="">AMG Line Advanced Plus</li>
-            <li class="">Paquete Night</li>
-            <li class="">Cargador e instalación de regalo</li>
-          </ul>
-        </div>
-    
-        <div class="flex justify-center">
-          <h3 class="">Oferta sujeta a la contratación de Seguro Mercedes-Benz. No incluido en la cuota.<b class="">[e]</b></h3>
-        </div>
-    
-        <div class="flex justify-center">
-          <ul>
-            <li class="">Hasta 70 km de autonomía eléctrica en ciudad</li>
-            <li class="">Recárgalo en casa en 3 h y 15 min</li>
-            <li class="">Etiqueta 0. Sin impuesto de matriculación</li>
-          </ul>
-        </div>
-    
-        <div class="flex justify-center gap-6 mt-6">
-          <button class="">Más información</button>
-          <button class="">También con motor térmico</button>
-        </div>
-      </div>
-    
-      <div class="flex-col justify-center mt-12 mb-12 max-w-3xl w-full p-6 bg-white rounded-lg shadow-lg space-y-6">
+      
 
-        <div class="flex justify-center w-full">
-          <img src="./images/6.jpg" alt="GLA 250 e" class="max-w-lg rounded-lg shadow-md">
+
+      <footer class="bg-black text-white py-10">
+        
+        <div class="container mx-auto px-4 text-center md:text-left">
+          <div class="flex flex-col md:flex-row md:justify-between items-center">
+            <div class="mb-6 md:mb-0">
+              <h3 class="text-xl font-bold mb-2">Mercedes-Benz Magazine</h3>
+              <p class="text-sm mb-4">
+                Acompáñanos a un viaje por nuestro universo Mercedes-Benz. Un apasionante
+                viaje lleno de experiencias y actualidad de nuestra marca.
+              </p>
+              <button class="bg-blue-600 hover:bg-blue-500 text-white font-semibold px-6 py-2 rounded">
+                Suscribirme ahora
+              </button>
+            </div>
+            <div class="hidden md:block">
+              <img src="./images/footer.jpg" alt="" class="w-64 h-auto">
+            </div>
+          </div>
         </div>
-    
-        <div class="flex justify-center">
-          <h3 class="t">GLA 250 e Híbrido Enchufable por 350 €/mes<b class="text-blue-600">[b]</b></h3>
-          <p class="">Aportación inicial de 15.803,70 €</p>
+      
+        
+        <div class="container mx-auto px-4 grid grid-cols-2 md:grid-cols-5 gap-8 mt-10">
+          
+          <div>
+            <h4 class="font-semibold mb-4">Los modelos más vendidos</h4>
+            <ul class="space-y-2 text-sm">
+              <li><a href="#" class="hover:underline">Eléctricos</a></li>
+              <li><a href="#" class="hover:underline">Híbridos Enchufables</a></li>
+              <li><a href="#" class="hover:underline">SUV</a></li>
+              <li><a href="#" class="hover:underline">Cabrios y roadsters</a></li>
+              <li><a href="#" class="hover:underline">Mercedes-AMG</a></li>
+              <li><a href="#" class="hover:underline">Mercedes-Maybach</a></li>
+              <li><a href="#" class="hover:underline">Furgonetas</a></li>
+            </ul>
+          </div>
+      
+         
+          <div>
+            <h4 class="font-semibold mb-4">Comprar un vehículo</h4>
+            <ul class="space-y-2 text-sm">
+              <li><a href="#" class="hover:underline">Ofertas destacadas</a></li>
+              <li><a href="#" class="hover:underline">Encontrar vehículos de ocasión</a></li>
+              <li><a href="#" class="hover:underline">Configurador y Precios</a></li>
+              <li><a href="#" class="hover:underline">Mercedes-Benz Empresas</a></li>
+            </ul>
+          </div>
+      
+          <div>
+            <h4 class="font-semibold mb-4">Guía de compra</h4>
+            <ul class="space-y-2 text-sm">
+              <li><a href="#" class="hover:underline">Calculador de leasing y financiación</a></li>
+              <li><a href="#" class="hover:underline">Reservar un recorrido de prueba</a></li>
+              <li><a href="#" class="hover:underline">Buscar concesionarios</a></li>
+              <li><a href="#" class="hover:underline">Extras Digitales</a></li>
+            </ul>
+          </div>
+      
+         
+          <div>
+            <h4 class="font-semibold mb-4">Tecnología</h4>
+            <ul class="space-y-2 text-sm">
+              <li><a href="#" class="hover:underline">Movilidad Eléctrica</a></li>
+              <li><a href="#" class="hover:underline">Carga</a></li>
+              <li><a href="#" class="hover:underline">Sistemas de asistencia a la conducción</a></li>
+              <li><a href="#" class="hover:underline">Sistema multimedia MBUX</a></li>
+              <li><a href="#" class="hover:underline">Conducción autónoma</a></li>
+            </ul>
+          </div>
+      
+          
+          <div>
+            <h4 class="font-semibold mb-4">Descubre Mercedes</h4>
+            <ul class="space-y-2 text-sm">
+              <li><a href="#" class="hover:underline">Acerca de nosotros</a></li>
+              <li><a href="#" class="hover:underline">Trabaja con Nosotros</a></li>
+              <li><a href="#" class="hover:underline">Soporte y contacto</a></li>
+              <li><a href="#" class="hover:underline">Sostenibilidad</a></li>
+            </ul>
+          </div>
         </div>
-    
-        <div class="flex justify-center">
-          <ul>
-            <li class="">AMG Line Advanced Plus</li>
-            <li class="">Paquete Night</li>
-            <li class="">Cargador e instalación de regalo</li>
-          </ul>
+      
+        
+        <div class="container mx-auto px-4 mt-10 text-center text-xs text-gray-400">
+          <p>&copy; 2024 Mercedes-Benz AG. Reservados todos los derechos.</p>
+          <div class="flex justify-center space-x-4 mt-4">
+            <a href="#" class="hover:text-white"><i class="fab fa-facebook"></i></a>
+            <a href="#" class="hover:text-white"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="hover:text-white"><i class="fab fa-youtube"></i></a>
+            <a href="https://intagram.com" class="hover:text-white"><i class="fab fa-instagram"></i></a>
+          </div>
         </div>
-    
-        <div class="flex justify-center">
-          <h3 class="">Oferta sujeta a la contratación de Seguro Mercedes-Benz. No incluido en la cuota.<b class="">[e]</b></h3>
-        </div>
-    
-        <div class="flex justify-center">
-          <ul>
-            <li class="">Hasta 70 km de autonomía eléctrica en ciudad</li>
-            <li class="">Recárgalo en casa en 3 h y 15 min</li>
-            <li class="">Etiqueta 0. Sin impuesto de matriculación</li>
-          </ul>
-        </div>
-    
-        <div class="flex justify-center gap-6 mt-6">
-          <button class="">Más información</button>
-          <button class="">También con motor térmico</button>
-        </div>
-      </div>
-    </div>
-    
-    
-    
-    
-    
+      </footer>
+      
   </div>
 </body>
 </html>
-
